@@ -1,0 +1,64 @@
+/* Movie */
+
+.section {
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
+    .section {
+      width: 95vw;
+    }
+  }
+
+.movie {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 250px;
+  }
+  .movie img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+  }
+
+
+.movie_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+  }
+  .movie_info h5 {
+    color: wheat;
+    margin-bottom: 0.25rem;
+  }
+  .movie_info p {
+    margin-bottom: 0;
+    color: wheat;
+  }
+  .movie:hover .movie_info {
+    transform: translateY(0);
+  }
+
+
+/* Movie list */
+
+.movies {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
